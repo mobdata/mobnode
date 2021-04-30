@@ -1,0 +1,22 @@
+{
+  "randomfield": "haho",
+  "somenumber": 5,
+  "someobject": {
+    "marpmoop": 2,
+    "actuallyanode": {
+      "protocol": "https",
+      "url": "https://md-111.whateverhost.org:6984",
+      "node_name": "111",
+      "host": "md-111.whateverhost.org",
+      "attributes": {
+        "company": "KeyW",
+        "office_type": "regional",
+        "classification": "TOP SECRET"
+      },
+      "password": "pswd",
+      "port": "6984",
+      "username": "admin"
+    }
+  },
+  "somearray": [ "haha", "just stuff" ]
+}

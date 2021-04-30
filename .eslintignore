@@ -1,0 +1,9 @@
+client/src/registerServiceWorker.js
+client/node_modules
+client/build
+client/src/parsers/rules.js
+client/src/regexes/regex-weburl.js
+server/node_modules
+server/webpack.config.server.js
+server/dist
+server/etc/classy.js

@@ -1,0 +1,14 @@
+{
+  "protocol": "https",
+  "url": "https://md-122.whateverhost.org:6984",
+  "node_name": "122",
+  "host": "md-122.whateverhost.org",
+  "attributes": {
+    "company": "Bobby Flay",
+    "office_type": "regional",
+    "classification": "UNCLASSIFIED"
+  },
+  "password": "pswd",
+  "port": "6984",
+  "username": "admin"
+}

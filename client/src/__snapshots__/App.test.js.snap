@@ -1,0 +1,511 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App mount tests renders Editdoc 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <Connect(ConnectedRouterWithContext)
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Connect(App)
+      route={
+        Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/editdoc",
+        }
+      }
+    />
+  </Connect(ConnectedRouterWithContext)>
+</ContextProvider>
+`;
+
+exports[`App mount tests renders conditionPath 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <Connect(ConnectedRouterWithContext)
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Connect(App)
+      route={
+        Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/conditions",
+        }
+      }
+    />
+  </Connect(ConnectedRouterWithContext)>
+</ContextProvider>
+`;
+
+exports[`App mount tests renders defaultPath 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <Connect(ConnectedRouterWithContext)
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Connect(App)
+      component={
+        Object {
+          "compare": null,
+          "displayName": "Connect(App)",
+        }
+      }
+      history={
+        Object {
+          "activeTab": "rules",
+          "history": Object {
+            "action": "REPLACE",
+            "length": 1,
+            "location": Object {
+              "hash": "",
+              "key": "h2zx6d",
+              "pathname": "/rules",
+              "search": "",
+            },
+          },
+          "location": Object {
+            "hash": "",
+            "key": "h2zx6d",
+            "pathname": "/rules",
+            "search": "",
+          },
+          "match": Object {
+            "isExact": false,
+            "params": Object {},
+            "path": "/",
+            "url": "/",
+          },
+          "route": Object {
+            "component": Object {
+              "compare": null,
+              "displayName": "Connect(App)",
+            },
+            "routes": Array [
+              Object {
+                "exact": true,
+                "path": "/",
+              },
+              Object {
+                "component": Object {
+                  "displayName": "WithStyles(Connect(NodePage))",
+                  "propTypes": Object {},
+                },
+                "exact": true,
+                "path": "/nodes",
+              },
+              Object {
+                "exact": true,
+                "path": "/rules",
+              },
+              Object {
+                "component": Object {
+                  "displayName": "WithStyles(Connect(ConditionPage))",
+                  "propTypes": Object {},
+                },
+                "exact": true,
+                "path": "/conditions",
+              },
+              Object {
+                "component": Object {
+                  "compare": null,
+                  "displayName": "Connect(HistoryPage)",
+                },
+                "exact": true,
+                "path": "/history",
+              },
+              Object {
+                "component": Object {
+                  "displayName": "WithStyles(EditDocPage)",
+                  "propTypes": Object {},
+                },
+                "exact": true,
+                "path": "/editdoc",
+              },
+            ],
+          },
+        }
+      }
+      route={
+        Object {
+          "routes": Array [
+            Object {
+              "component": Object {
+                "displayName": "WithStyles(Connect(NodePage))",
+                "propTypes": Object {},
+              },
+              "exact": true,
+              "path": "/nodes",
+            },
+            Object {
+              "component": Object {
+                "displayName": "WithStyles(Connect(App))",
+                "propTypes": Object {},
+              },
+              "exact": true,
+              "path": "/rules",
+            },
+            Object {
+              "component": Object {
+                "displayName": "WithStyles(Connect(ConditionPage))",
+                "propTypes": Object {},
+              },
+              "exact": true,
+              "path": "/conditions",
+            },
+            Object {
+              "component": Object {
+                "compare": null,
+                "displayName": "Connect(HistoryPage)",
+              },
+              "exact": true,
+              "path": "/history",
+            },
+            Object {
+              "component": Object {
+                "displayName": "WithStyles(EditDocPage)",
+                "propTypes": Object {},
+              },
+              "exact": true,
+              "path": "/editdoc",
+            },
+          ],
+        }
+      }
+    />
+  </Connect(ConnectedRouterWithContext)>
+</ContextProvider>
+`;
+
+exports[`App mount tests renders historyPath 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <Connect(ConnectedRouterWithContext)
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Connect(App)
+      route={
+        Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/history",
+        }
+      }
+    />
+  </Connect(ConnectedRouterWithContext)>
+</ContextProvider>
+`;
+
+exports[`App mount tests renders nodePath 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <Connect(ConnectedRouterWithContext)
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Connect(App)
+      route={
+        Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/nodes",
+        }
+      }
+    />
+  </Connect(ConnectedRouterWithContext)>
+</ContextProvider>
+`;
+
+exports[`App mount tests renders rulePath 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <Connect(ConnectedRouterWithContext)
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Connect(App)
+      route={
+        Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/nodes",
+        }
+      }
+    />
+  </Connect(ConnectedRouterWithContext)>
+</ContextProvider>
+`;

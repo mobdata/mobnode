@@ -1,0 +1,23 @@
+.errorLine {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.errorLine:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.addedLine {
+  background-color: rgba(0, 255, 0, 0.4);
+}
+
+.addedLine:hover {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.removedLine {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.removedLine:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}

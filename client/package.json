@@ -1,0 +1,81 @@
+{
+  "name": "new_client",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "env-dev": "if [ -e .env.development ]; then cp .env.development .env; else sudo cp /etc/mobnode/env.dev.cli ~/mobnode/client/.env.development; cp .env.development .env; fi",
+    "env-default": "if [ -e .env.default ]; then cp .env.default .env; fi",
+    "start": "npm run env-dev; react-scripts start",
+    "build": "npm run env-default; react-scripts build",
+    "test": "npm run env-default; NODE_ENV=test jest --env=jsdom ",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@devexpress/dx-core": "2.5.0",
+    "@devexpress/dx-grid-core": "2.5.0",
+    "@devexpress/dx-react-core": "2.5.0",
+    "@devexpress/dx-react-grid": "2.5.0",
+    "@devexpress/dx-react-grid-material-ui": "2.5.0",
+    "@mobdata/mobdsl": "^1.0.1",
+    "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
+    "@mobdata/classification-banner": "^1.0.1",
+    "codemirror": "^5.52.0",
+    "connected-react-router": "^6.8.0",
+    "debug": "^4.3.1",
+    "diff": "^4.0.2",
+    "enumify": "^1.0.4",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "filepond": "4.12.0",
+    "history": "^4.10.1",
+    "http-proxy-middleware": "^1.0.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-codemirror": "^1.0.0",
+    "react-dom": "^16.13.0",
+    "react-filepond": "7.0.1",
+    "react-popupbox": "^2.0.8",
+    "react-redux": "^7.2.0",
+    "react-rich-diff": "^0.6.1",
+    "react-router": "^5.1.2",
+    "react-router-config": "^5.1.1",
+    "react-scripts": "3.4.0",
+    "react-upload-file": "2.0.0-beta.6",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "regenerator-runtime": "^0.13.3",
+    "reselect": "^4.0.0",
+    "shortid": "^2.2.15",
+    "slugify": "^1.4.0",
+    "xxhashjs": "^0.2.2"
+  },
+  "devDependencies": {
+    "fetch-mock": "^9.0.0",
+    "fetch-mock-jest": "^1.5.1",
+    "jest-fetch-mock": "^3.0.3",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-mock-store": "^1.5.4"
+  },
+  "homepage": ".",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/test/jestsetup.js"
+    ]
+  }
+}

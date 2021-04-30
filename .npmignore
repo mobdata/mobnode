@@ -1,0 +1,22 @@
+# temp .env files
+client/.env.development
+*.swp
+server/.env
+
+# build-related files
+node_modules
+server/dist
+client/build
+mobnode.service
+SOURCES
+SPECS
+
+#logs
+client_log.txt
+npm-debug.log
+server_log.txt
+yarn-error.log
+
+# not-for-publishing
+build-rpm
+

@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "protocol": "https",
+      "url": "https://md-122.whateverhost.org:6984",
+      "node_name": "122",
+      "host": "md-122.whateverhost.org",
+      "attributes": {
+        "company": "Bobby Flay",
+        "office_type": "headquarters",
+        "classification": "TOP SECRET"
+      },
+      "password": "pswd",
+      "port": "6984",
+      "username": "admin"
+    },
+    {
+      "protocol":"https",
+      "url":"https://md-121.whateverhost.org:6984",
+      "node_name": "121",
+      "host": "md-121.whateverhost.org",
+      "attributes":{
+        "office_type": "regional",
+        "classification":"SECRET"
+      },
+      "password":"pswd",
+      "port":"6984",
+      "username":"admin"
+    },
+    {
+      "url": "https://md-110.whateverhost.org:6984",
+      "node_name": "110",
+      "host": "md-110.whateverhost.org",
+      "attributes": {
+        "company": "Mario Batali",
+        "office_type": "headquarters",
+        "classification": "TOP SECRET"
+      },
+      "password": "pswd",
+      "username": "admin"
+    },
+    {
+      "host": "md-111.whateverhost.org",
+      "attributes": {
+        "company": "Mario Batali",
+        "office_type": "regional",
+        "classification": "TOP SECRET"
+      },
+      "password": "pswd",
+      "username": "admin"
+    },
+    {
+      "node_name": "112",
+      "attributes": {
+        "company": "Alex Guarnaschelli",
+        "office_type":"headquarters",
+        "classification": "SECRET"
+      }
+    },
+    {
+      "trash": "this one is just trash to throw out",
+      "goal": "this file we're gonna have a couple of each possible node type, to see it handle new, updated, and incomplete in bulk"
+    }
+  ]
+}

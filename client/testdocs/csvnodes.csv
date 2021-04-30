@@ -1,0 +1,3 @@
+node_name,protocol,host,port,username,password,company,classification,office_type
+121,https,md-121.whateverhost.org,6984,admin,pswd,google,SECRET,regional
+122,https,md-122.whateverhost.org,6984,admin,pswd,google,TOP SECRET,regional

@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "_id": "hurpturpmurpburp",
+      "protocol": "https",
+      "url": "https://md-121.whateverhost.org:6984",
+      "node_name": "121",
+      "host": "md-121.whateverhost.org",
+      "attributes": {
+        "company": "Mario Batali",
+        "office_type": "headquarters",
+        "classification": "TOP SECRET"
+      },
+      "password": "pswd",
+      "port": "6984",
+      "username": "admin"
+    },
+    {
+      "_rev": "1-23456",
+      "protocol": "https",
+      "url": "https://md-112.whateverhost.org:6984",
+      "node_name": "112",
+      "host": "md-112.whateverhost.org",
+      "attributes": {
+        "company": "Mario Batali",
+        "office_type": "headquarters",
+        "classification": "TOP SECRET"
+      },
+      "password": "pswd",
+      "port": "6984",
+      "username": "admin"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "name": "mobnode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "A library that provides an interface for setting up replication rules among CouchDb databases across many servers. ",
+  "contributors": [
+    "Timothy McKernan <timbitsandbytes@gmail.com>",
+    "Sara Kim",
+    "Connor Bulakites",
+    "Marita Carballo",
+    "Gabriel Lake",
+    "Christian Turner",
+    "Joseph Lagnese"
+  ],  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mobdata/mobnode"
+  },
+  "scripts": {
+    "install-all": "npm install; pushd server; npm install; popd; pushd client; npm install; popd",
+    "start": "cd server; npm start",
+    "dev": "concurrently \"npm run dev --prefix ./server\" \"HTTPS=true npm start --prefix ./client\"",
+    "test": "cd server; npm run-script test; cd ../client; npm run-script test",
+    "lint": "eslint  server  client/src",
+    "build": "concurrently \"pushd server; npm run build; popd\" \"pushd client; npm run build; popd\"",
+    "build-rpm": "npm run install-all; npm run build; ./build-rpm"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-preset-react-app": "^10.0.0",
+    "concurrently": "^5.1.0",
+    "enzyme": "^3.11.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "nodemon": "^2.0.2",
+    "pre-commit": "^1.2.2",
+    "speculate": "^2.1.1"
+  },
+  "spec": {
+    "requires": [
+      "nodejs"
+    ],
+    "post": [
+      "pushd /usr/lib/mobnode; source ./mnaddsecret /usr/lib/mobnode/server/.env; popd",
+      "usermod -d /usr/lib/mobnode mobnode",
+      "systemctl daemon-reload"
+    ]
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "connected-react-router": "^6.7.0",
+    "core-js": "^3.6.4",
+    "debug": "^4.3.1",
+    "history": "^4.10.1",
+    "http-proxy-middleware": "^1.0.1",
+    "node-fetch": "^2.6.0",
+    "regenerator-runtime": "^0.13.3"
+  }
+}

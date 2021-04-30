@@ -1,0 +1,36 @@
+# Environment variables
+*/.env
+*/.env.development
+
+#logs
+client_log.txt
+npm-debug.log
+server_log.txt
+yarn-error.log
+yarn.log
+
+# build output
+server/dist
+client/build
+server/.vscode
+
+# dependencies
+node_modules
+
+# coverage
+.nyc_output
+coverage
+
+# Misc
+*.swp
+.idea
+# RPM
+*.service
+SOURCES
+SPECS
+
+# Docker
+tls
+
+# Cache
+client/.eslintcache

@@ -1,0 +1,26 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "ecmaFeatures": {
+      "globalReturn": false
+    },
+    "babelOptions": {
+      "configFile": "<rootDir>/client/src/.babelrc"
+    }
+  },
+  "rules": {
+    "semi": [0],
+    "no-multi-spaces": [2, { "exceptions": { "VariableDeclarator": true }}],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"]}],
+    "import/no-extraneous-dependencies": [0, { "devDependencies": ["modules/*", "components/*"] }],
+    "import/no-unresolved": [0, { "devDependencies": ["modules/*", "components/*"] }],
+    "import/extensions": [0, { "devDependencies": ["modules/*", "components/*"] }],
+    "react/destructuring-assignment": [0],
+    "no-extend-native": [0],
+    "react/static-property-placement": [0],
+    "max-classes-per-file": ["error", 2],
+    "indent": ["error", 2, {     "ignoredNodes": ["TemplateLiteral"]   }]
+  }
+}

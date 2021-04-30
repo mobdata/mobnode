@@ -1,0 +1,40 @@
+function(doc, req) {
+    function errorObject(code, errorName, reason){
+        return [null, {'code': code, 'json': {'error': errorName, 'reason': reason}}];
+    }
+    if (req.method !== 'POST'){
+        return errorObject(400, 'Bad Request', 'Only POST is allowed here.');
+    }
+    else if (doc){
+        log('Inside doc');
+        if (doc._id){
+            log('Updating doc');
+            var updatedValues = JSON.parse(req.body);
+            doc = updatedValues;
+            doc['updated_on'] = new Date();
+            return [doc, {'json': {'status': 'ok', '_id': doc['_id']}}];
+        }
+        else{
+            return errorObject(400, 'Bad Request', 'Document has no _id');
+        }
+    }
+    else if (!req.body){
+        return errorObject(400, 'Bad Request', 'No document to add');
+    }
+    else{
+        try{
+            log('Updating req.body - ' + req.body);
+            var node = JSON.parse(req.body);
+            if (!node._id){
+                node['_id'] = req.uuid;
+            }
+            node['created_on'] = new Date();
+            node['updated_on'] = node['created_on'];
+            return [node, {'json': {'status': 'ok', '_id': node['_id']}}];
+        }
+        catch (e) {
+            log('Error parsing node: ' + e.toString());
+            return errorObject(400, 'Bad Request','The request body does not contain JSON: ' + req.body.substring(0,50));
+        }
+    }
+}

@@ -1,0 +1,3 @@
+node_name,protocol,host,port,username
+110,https,md-110.trinityalps.org,6984,admin
+111,https,md-111.trinityalps.org,6984,admin
